@@ -1,7 +1,7 @@
 import axios from "axios";
 import { supabase } from "../lib/supabase";
 
-const API_URL = "http://localhost:8001";
+const API_URL = "https://compartir-api.onrender.com";
 
 async function getAuthHeaders() {
   const {
