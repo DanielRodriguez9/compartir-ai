@@ -33,7 +33,7 @@ def root():
     return {
         "service": "COMPARTIR API",
         "status": "online",
-        "deepseek_configured": bool(settings.DEEPSEEK_API_KEY),
+        "groq_configured": bool(settings.GROQ_API_KEY),
     }
 
 
