@@ -8,10 +8,13 @@ app = FastAPI(
     description="Compañero IA para aprender inglés"
 )
 
-# CORS - permite todos los orígenes temporalmente para depurar
+# CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # ⚠️ Temporal para pruebas
+    allow_origins=[
+        "https://compartir-ai.vercel.app",
+        "http://localhost:5173",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
