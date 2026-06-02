@@ -17,7 +17,7 @@ app.add_middleware(
         "http://localhost:3000",
 
         # Agregar aquí tu dominio de Vercel cuando despliegues
-        # "https://compartirai.vercel.app",
+        "https://compartirai.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
