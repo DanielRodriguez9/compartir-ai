@@ -786,7 +786,7 @@ const LandingPage = ({ onStart }) => {
           <div className="flex flex-wrap items-center justify-center gap-2 text-xs">
             <span>Desarrollado por</span>
             <a
-              href="https://cryptomilovat.com"
+              href="https://www.facebook.com/cryptomilovattech"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#a87a64] hover:underline font-medium"
