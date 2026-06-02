@@ -8,17 +8,10 @@ app = FastAPI(
     description="Compañero IA para aprender inglés"
 )
 
-# CORS
+# CORS - permite todos los orígenes temporalmente para depurar
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "http://localhost:3000",
-
-        # Agregar aquí tu dominio de Vercel cuando despliegues
-        "https://compartirai.vercel.app",
-    ],
+    allow_origins=["*"],  # ⚠️ Temporal para pruebas
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -26,7 +19,6 @@ app.add_middleware(
 
 # Rutas
 app.include_router(chat.router)
-
 
 @app.get("/")
 def root():
@@ -36,9 +28,6 @@ def root():
         "groq_configured": bool(settings.GROQ_API_KEY),
     }
 
-
 @app.get("/health")
 def health():
-    return {
-        "status": "ok"
-    }
+    return {"status": "ok"}
