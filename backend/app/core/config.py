@@ -9,7 +9,7 @@ class Settings:
     SUPABASE_KEY = os.getenv("SUPABASE_KEY")
     
     # JWT
-    SECRET_KEY = os.getenv("SECRET_KEY", "mi_super_secret_key_cambia_esto")
+    SECRET_KEY = os.getenv("SECRET_KEY")
     ALGORITHM = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES = 30
     
