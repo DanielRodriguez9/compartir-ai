@@ -20,10 +20,5 @@ try:
     print(f" Personalidades encontradas: {len(result.data)}")
     
 except Exception as e:
-    print(f"\n❌ Error: {e}")
+    print(f"\nError: {e}")
     
-    # Si el error es de tabla, crear las tablas
-    if "relation" in str(e) and "does not exist" in str(e):
-        print("\n⚠️ Las tablas no están creadas aún.")
-        print(" Ve a: https://supabase.com/dashboard/project/vuhmmscasuvserzdgtph/sql")
-        
