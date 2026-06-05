@@ -26,4 +26,4 @@ except Exception as e:
     if "relation" in str(e) and "does not exist" in str(e):
         print("\n⚠️ Las tablas no están creadas aún.")
         print(" Ve a: https://supabase.com/dashboard/project/vuhmmscasuvserzdgtph/sql")
-        print(" Ejecuta el script SQL que te di antes con CREATE TABLE")
+        
